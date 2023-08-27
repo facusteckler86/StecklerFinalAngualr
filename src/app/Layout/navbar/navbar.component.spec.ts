@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { NavbarComponent } from './navbar.component';
+import { MatButtonModule } from '@angular/material/button';
 
 describe('NavbarComponent', () => {
   let component: NavbarComponent;

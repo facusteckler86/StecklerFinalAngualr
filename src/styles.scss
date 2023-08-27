@@ -1,4 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: 'CustomFont';
+  src: url('./assets/fonts/custom-font.ttf'); }
+
+// TIPOGRAFIA A USAR EN EL PROYECTO: ROBOTO
+
+// @font-face {
+//   font-family: 'CustomFont';
+//   src: url('./assets/fonts/custom-font.ttf');
+// }
