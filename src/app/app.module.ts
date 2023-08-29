@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { LayoutModule } from './Layout/LayoutModule';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NavbarModule } from './navbar/navbar.module';
+
 
 
 @NgModule({
@@ -17,7 +17,7 @@ import { NavbarModule } from './navbar/navbar.module';
     FormsModule,
     LayoutModule,
     BrowserAnimationsModule,
-    NavbarModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent],

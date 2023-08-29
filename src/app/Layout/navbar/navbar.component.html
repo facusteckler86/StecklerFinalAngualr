@@ -1,29 +1,35 @@
+<!-- sidebar -->
+
 <mat-drawer-container class="example-container" autosize>
-  <mat-drawer mode="over" class="example-sidenav" mode="side">
-    <!-- <p>Auto-resizing sidenav</p>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <p>Auto-resizing sidenav</p>
     <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
-    <button  mat-raised-button>
+    <button (click)="showFiller = !showFiller" mat-raised-button>
       Toggle extra text
-    </button> -->
+    </button>
   </mat-drawer>
 
   <div class="example-sidenav-content">
-    <!-- <button type="button" mat-button (click)="drawer.toggle()">
-      Toggle sidenav
-    </button> -->
-  </div>
+      <!-- toolbar -->
 
-  <mat-toolbar color="primary">
-    <button (click)="drawer.toggle()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-toolbar color="primary">
+    <button (click)="drawer.toggle()"
+    mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
       <mat-icon>menu</mat-icon>
     </button>
-    <span>Cursos Disponibles</span>
+    <span>Cursos</span>
     <span class="example-spacer"></span>
-    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-      <mat-icon>favorite</mat-icon>
-    </button>
+    <!-- <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>favorite</mat-icon> -->
+    <!-- </button>
     <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
       <mat-icon>share</mat-icon>
-    </button>
+    </button> -->
   </mat-toolbar>
+    <main class="p-3">
+      <app-home></app-home>
+    </main>
+
+  </div>
+
 </mat-drawer-container>
