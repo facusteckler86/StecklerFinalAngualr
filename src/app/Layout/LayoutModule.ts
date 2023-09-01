@@ -7,19 +7,23 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { HomeModule } from './navbar/pages/home/home.module';
+import { UsersModule } from './pages/users/users.module';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { UsersComponent } from './pages/users/users.component';
 
 @NgModule({
-  declarations: [NavbarComponent, MainWrapperComponent],
+  declarations: [NavbarComponent, MainWrapperComponent,],
   imports: [
     CommonModule,
     MatSidenavModule,
     MatButtonModule,
     MatToolbarModule,
     MatIconModule,
-    HomeModule
-
-
-
+    HomeModule,
+    UsersModule,
+    MatFormFieldModule,
+    MatInputModule,
   ],
   exports: [NavbarComponent, MainWrapperComponent],
 })

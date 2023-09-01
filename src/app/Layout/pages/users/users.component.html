@@ -1,0 +1,33 @@
+<form [F ormGroup]="userForm">
+
+  <div class="field">
+  <mat-form-field appearance="fill">
+    <mat-label>Nombre</mat-label>
+    <input formControlName="name" matInput type="text" name="name">
+    <mat-error *ngIf="nameControl.invalid && nameControl.hasError(´required´)">
+      Este campo es obligatorio
+    </mat-error>
+  </mat-form-field>
+</div>
+    <div class="field">
+    <mat-form-field appearance="fill">
+      <mat-label>Apellido</mat-label>
+      <input formControlSurname="surname" matInput type="text" surname="surname">
+    </mat-form-field>
+    </div>
+
+    <div class="field">
+  <mat-form-field appearance="fill">
+    <mat-label>Email</mat-label>
+    <input  formControlEmail="email" matInput type="email" email="email">
+  </mat-form-field>
+    </div>
+
+    <div class="field">
+  <mat-form-field appearance="fill">
+    <mat-label>Password</mat-label>
+    <input formControlPassword="password" matInput type="password" password="password">
+  </mat-form-field>
+    </div>
+
+  </form>
