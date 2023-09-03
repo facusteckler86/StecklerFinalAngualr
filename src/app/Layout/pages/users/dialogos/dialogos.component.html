@@ -1,0 +1,54 @@
+<h2 mat-dialog-title>Crea tu Usuario</h2>
+
+<div mat-dialog-content>
+
+<form [ FormGroup]="userForm">
+
+  <div class="field">
+  <mat-form-field appearance="fill">
+    <mat-label>Nombre</mat-label>
+    <input formControlName="name" matInput type="text" name="name">
+    <!-- <mat-error *ngIf="nameControl.hasError("required")">
+      Este campo es obligatorio</mat-error> -->
+  </mat-form-field>
+</div>
+    <div class="field">
+    <mat-form-field appearance="fill">
+      <mat-label>Apellido</mat-label>
+      <input formControlSurname="surname" matInput type="text" surname="surname">
+      <!-- <mat-error *ngIf="SurnameControl.hasError("required")">
+      Este campo es obligatorio
+    </mat-error> -->
+
+    </mat-form-field>
+    </div>
+
+    <div class="field">
+  <mat-form-field appearance="fill">
+    <mat-label>Email</mat-label>
+    <input  formControlEmail="email" matInput type="email" email="email">
+  </mat-form-field>
+    </div>
+
+    <div class="field">
+  <mat-form-field appearance="fill">
+    <mat-label>Password</mat-label>
+    <input formControlPassword="password" matInput type="password" password="password">
+
+    <!-- <mat-error *ngIf="PasswordControl.hasError("minlenght")">
+      Este campo debe tener al menos {{PasswordControl.errors?.[´minlenght´]?.requiredLenght}
+    </mat-error> -->
+
+  </mat-form-field>
+    </div>
+    <!-- <div class="col-12 flex justify-content end">
+
+      </div> -->
+
+    </form>
+
+    </div>
+        <div class="flex justify-content-end" mat-dialog-actions>
+          <button mat-button mat-dialog-close>Cancelar</button>
+          <button (click)="onSubmit()" type="submit" mat-button>Guardar</button>
+        </div>

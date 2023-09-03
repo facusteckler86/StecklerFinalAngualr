@@ -11,6 +11,8 @@ import { UsersModule } from './pages/users/users.module';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { UsersComponent } from './pages/users/users.component';
+import {MatDialogModule} from '@angular/material/dialog';
+
 
 @NgModule({
   declarations: [NavbarComponent, MainWrapperComponent,],
@@ -24,6 +26,7 @@ import { UsersComponent } from './pages/users/users.component';
     UsersModule,
     MatFormFieldModule,
     MatInputModule,
+    MatDialogModule,
   ],
   exports: [NavbarComponent, MainWrapperComponent],
 })

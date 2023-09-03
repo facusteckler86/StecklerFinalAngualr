@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-users',
@@ -7,16 +8,20 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./users.component.scss']
 })
 export class UsersComponent {
-  nameControl =  new FormControl(null, Validators.required);
-  surnameControl = new FormControl(null, Validators.required);
-  emailControl = new FormControl(null, Validators.email);
-  passwordControl = new FormControl(null,Validators.required);
 
-  userForm = new FormGroup({
-    name: this.nameControl,
-    surname: this.surnameControl,
-    email: this.emailControl,
-    password: this.passwordControl,
+    constructor(
+      private matDialogos: MatDialog
+    ){}
 
-  });
-}
+      onCreateUser(): void{
+        const dialogRef = this.matDialogos.open(UsersComponent)
+
+        dialogRef.afterClosed().subscribe({
+          next:(v) => {
+            if(v){console.log("Recibimos la info: ", v);
+        } else { console.log("Se dio de baja")
+        }
+        },
+      });
+
+  }}
