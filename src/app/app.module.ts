@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { LayoutModule } from './Layout/LayoutModule';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TablasComponent } from './Layout/pages/users/tablas/tablas.component';
 
 
 
@@ -17,6 +18,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FormsModule,
     LayoutModule,
     BrowserAnimationsModule,
+
 
   ],
   providers: [],

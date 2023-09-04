@@ -6,6 +6,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatDialogModule } from '@angular/material/dialog';
 import { DialogosComponent } from './dialogos/dialogos.component';
 import { MatIconModule } from '@angular/material/icon';
+import { TablasModule } from './tablas/tablas.module';
+import { MatTableModule } from '@angular/material/table';
+
 
 
 
@@ -17,6 +20,8 @@ import { MatIconModule } from '@angular/material/icon';
     MatFormFieldModule,
     MatDialogModule,
     MatIconModule,
+    TablasModule,
+    MatTableModule,
   ],
   exports: [UsersComponent, DialogosComponent],
 })
