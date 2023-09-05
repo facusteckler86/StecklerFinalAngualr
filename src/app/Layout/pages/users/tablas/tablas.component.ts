@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Users } from '../models';
+import { UsersComponent } from '../users.component';
 
 
 // export interface PeriodicElement {
@@ -30,5 +31,8 @@ import { Users } from '../models';
 export class TablasComponent {
   displayedColumns: string[] = ['id', 'name', 'surname', 'email'];
   @Input()
-  dataSource = Users[]=[];
+
+// lo tengo que dejar comentado ya que me larga error el Users[]
+  // DataSource = Users =[]=[];
+  DataSource = [];
 }
