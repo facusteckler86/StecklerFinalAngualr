@@ -9,6 +9,8 @@ import { MatDialogRef } from '@angular/material/dialog';
 })
 export class DialogosComponent {
 
+  // Validadores
+
   nameControl = new FormControl(null, Validators.required);
   surnameControl = new FormControl(null, Validators.required);
   emailControl = new FormControl(null, Validators.email);

@@ -4,24 +4,31 @@
 
 <form [ FormGroup]="userForm">
 
+  <!-- Nombre -->
+
   <div class="field">
   <mat-form-field appearance="fill">
     <mat-label>Nombre</mat-label>
     <input formControlName="name" matInput type="text" name="name">
-    <!-- <mat-error *ngIf="nameControl.hasError("required")">
-      Este campo es obligatorio</mat-error> -->
+    <mat-error *ngIf="nameControl.hasError("required")">
+      Este campo es obligatorio</mat-error>
   </mat-form-field>
 </div>
-    <div class="field">
+
+<!-- Apellido -->
+
+<div class="field">
     <mat-form-field appearance="fill">
       <mat-label>Apellido</mat-label>
       <input formControlSurname="surname" matInput type="text" surname="surname">
-      <!-- <mat-error *ngIf="SurnameControl.hasError("required")">
+      <mat-error *ngIf="SurnameControl.hasError("required")">
       Este campo es obligatorio
-    </mat-error> -->
+    </mat-error>
 
     </mat-form-field>
     </div>
+
+    <!-- mail -->
 
     <div class="field">
   <mat-form-field appearance="fill">
@@ -41,10 +48,6 @@
 
   </mat-form-field>
     </div>
-    <!-- <div class="col-12 flex justify-content end">
-
-      </div> -->
-
     </form>
 
     </div>

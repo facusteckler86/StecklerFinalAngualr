@@ -22,6 +22,7 @@ import { FullNamePipe } from './shared/pipes/full-name.pipe';
 
 
   ],
+  exports: [FullNamePipe],
   providers: [],
   bootstrap: [AppComponent],
 })

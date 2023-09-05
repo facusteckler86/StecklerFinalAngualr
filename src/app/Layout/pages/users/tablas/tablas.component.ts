@@ -29,10 +29,7 @@ import { UsersComponent } from '../users.component';
 })
 
 export class TablasComponent {
-  displayedColumns: string[] = ['id', 'name', 'surname', 'email'];
+  displayedColumns: string[] = ['id', 'fullName', 'email'];
   @Input()
-
-// lo tengo que dejar comentado ya que me larga error el Users[]
-  // DataSource = Users =[]=[];
-  DataSource = [];
+  dataSource: Users [] = [];
 }
